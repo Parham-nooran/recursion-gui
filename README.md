@@ -38,7 +38,7 @@ so put this one into your readme:
 `![alt text](https://github.com/k-n-toosi-university-of-technology/tahw7-gui-starter/blob/master/docs/ouput.PNG "Ouptut")`
 
 
-![alt text](http://apj.ce.kntu.ac.ir/git/root/tahw11-recursion-gui-starter/-/blob/master/docs/output.png "Ouptut")
+![alt text](http://apj.ce.kntu.ac.ir/git/root/tahw11-recursion-gui-starter/-/blob/master/docs/output.jpg "Ouptut")
 
 
 
