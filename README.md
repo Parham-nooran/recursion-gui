@@ -14,10 +14,9 @@
   
   سعی کنید انتخابی کنید که دیگران آن  را انتخاب نکنند و برنامه خود را به خوانا ترین شکل بنویسید. بهترین برنامه ها معرفی خواهند شد
   
-  
   </alt>
 
-  http://www.cs.princeton.edu/courses/archive/fall14/cos126/art/index.php
+http://www.cs.princeton.edu/courses/archive/fall14/cos126/art/index.php
 
 https://www.cs.princeton.edu/courses/archive/fall15/cos126/art/index.php
 
@@ -25,21 +24,7 @@ http://www.cs.princeton.edu/courses/archive/spr15/cos126/art/index.php
 
 
 # Output
-take a screenshot from the output of your program and save it as an image into the docs directory. then edit the readme to show that image using the raw url:
-
-for example the output of my program is image output.PNG and it is here: https://github.com/k-n-toosi-university-of-technology/tahw7-gui-starter/blob/master/docs/ouput.PNG
-
-then in order to show it you should use this syntax:
-
-`![alt text](<IMAGE_URL> "Ouptut")`
-
-so put this one into your readme:
-
-`![alt text](https://github.com/k-n-toosi-university-of-technology/tahw7-gui-starter/blob/master/docs/ouput.PNG "Ouptut")`
-
-
-![alt text](http://apj.ce.kntu.ac.ir/git/root/tahw11-recursion-gui-starter/-/blob/master/docs/output.jpg "Ouptut")
-
+take a screenshot from the output of your program and save it as an image into the docs directory.
 
 
 # JavaFx 11
@@ -49,8 +34,8 @@ so put this one into your readme:
 clone in your computer: 
 
 ```
-git clone http://apj.ce.kntu.ac.ir/git/root/javafx-gui-starter.git
-cd javafx-gui-starter
+git clone http://apj.ce.kntu.ac.ir/git/root/<YOUR_REPO_URL>
+cd YOUR_REPO_URL
 ```
 
 
