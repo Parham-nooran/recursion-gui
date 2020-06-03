@@ -27,7 +27,8 @@ take a screenshot from the output of your program and save it as an image into t
 
 
 # Example output: 
-![Screen Shot](https://raw.githubusercontent.com/mhrimaz/SierpinskiCarpetFX/master/Screenshot%20from%202016-12-17%2022-52-19.png)
+<div align="center"> ![Screen Shot](https://raw.githubusercontent.com/mhrimaz/SierpinskiCarpetFX/master/Screenshot%20from%202016-12-17%2022-52-19.png) </p>
+</div>
 
 
 # JavaFx 11
