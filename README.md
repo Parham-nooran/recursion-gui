@@ -1,4 +1,3 @@
-
 # Assignment discription
 
 <alt dir="rtl" align="right">
@@ -25,6 +24,10 @@ http://www.cs.princeton.edu/courses/archive/spr15/cos126/art/index.php
 
 # Output
 take a screenshot from the output of your program and save it as an image into the docs directory.
+
+
+# Example output: 
+![Screen Shot](https://raw.githubusercontent.com/mhrimaz/SierpinskiCarpetFX/master/Screenshot%20from%202016-12-17%2022-52-19.png)
 
 
 # JavaFx 11
