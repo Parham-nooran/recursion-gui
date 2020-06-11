@@ -8,6 +8,8 @@ import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.util.Scanner;
+
 public class JavaFxApplication extends Application {
 
     public static void main(String[] args) {
@@ -20,10 +22,14 @@ public class JavaFxApplication extends Application {
         Scene scene = new Scene(root, 610, 610);
         // try to separate logic from GUI
         RecursiveGUI recursiveGUI = new RecursiveGUI();
+        System.out.println("Enter a number");
+        recursiveGUI.setNumber(new Scanner(System.in).nextInt());
         Circle circle = new Circle(300, 300, 300, Color.GOLD);
         root.getChildren().add(circle);
         double radius = 300;
-        recursiveGUI.draw(root, radius, radius, radius/4);
+        if(recursiveGUI.getNumber()>1) {
+            recursiveGUI.draw(root, radius, radius, radius / 4);
+        }
         stage.initStyle(StageStyle.UTILITY);
         stage.setTitle("Recursion in JavaFX!");
         stage.setScene(scene);
