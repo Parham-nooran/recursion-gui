@@ -22,7 +22,7 @@ public class JavaFxApplication extends Application {
         Scene scene = new Scene(root, 610, 610);
         // try to separate logic from GUI
         RecursiveGUI recursiveGUI = new RecursiveGUI();
-        System.out.println("Enter a number");
+        System.out.println("Enter a number between 1 and 11");
         recursiveGUI.setNumber(new Scanner(System.in).nextInt());
         Circle circle = new Circle(300, 300, 300, Color.GOLD);
         root.getChildren().add(circle);
@@ -33,6 +33,12 @@ public class JavaFxApplication extends Application {
         stage.initStyle(StageStyle.UTILITY);
         stage.setTitle("Recursion in JavaFX!");
         stage.setScene(scene);
-        stage.show();
+        if(recursiveGUI.getNumber()>=1&&recursiveGUI.getNumber()<12) {
+            stage.show();
+        }else {
+            System.out.println("The input is out of range");
+            stage.close();
+            System.exit(0);
+        }
     }
 }
