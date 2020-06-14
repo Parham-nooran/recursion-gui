@@ -16,28 +16,31 @@ public class JavaFxApplication extends Application {
         launch(args);
     }
 
-    public void start(Stage stage) throws Exception {
-        Scanner scanner = new Scanner(System.in);
+    public void start(Stage stage) {
+        double height, width;
         Pane root = new Pane();
-        //root.setStyle("-fx-border-width: 0 0 5 0; -fx-border-style: dotted;");
-        System.out.println("Enter page dimensions");
-        System.out.println("Enter the height");
-        double height = scanner.nextDouble();
-        System.out.println("Enter the width");
-        double width = scanner.nextDouble();
-        Scene scene = new Scene(root, height+10, width+10);
-        // try to separate logic from GUI
+        Scene scene;
         RecursiveGUI recursiveGUI = new RecursiveGUI();
-        System.out.println("Enter a number between 1 and 11");
+        //root.setStyle("-fx-border-width: 0 0 5 0; -fx-border-style: dotted;");
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Enter page dimensions");
+            System.out.println("Enter the height");
+            height = scanner.nextDouble();
+            System.out.println("Enter the width");
+            width = scanner.nextDouble();
+            scene = new Scene(root, height + 10, width + 10);
+            // try to separate logic from GUI
+            System.out.println("Enter a number between 1 and 11");
+            recursiveGUI.setNumber(scanner.nextInt());
+        }
         double radius = height/2;
-        recursiveGUI.setNumber(scanner.nextInt());
         Circle circle = new Circle(radius, radius, radius, Color.GOLD);
         root.getChildren().add(circle);
         if(recursiveGUI.getNumber()>=1&&recursiveGUI.getNumber()<12) {
             recursiveGUI.draw(root, radius, radius, radius / 4);
-        stage.initStyle(StageStyle.UTILITY);
-        stage.setTitle("Recursion in JavaFX!");
-        stage.setScene(scene);
+            stage.initStyle(StageStyle.UTILITY);
+            stage.setTitle("Recursion in JavaFX!");
+            stage.setScene(scene);
             stage.show();
         }else {
             System.out.println("The input is out of range");
