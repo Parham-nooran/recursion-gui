@@ -1,11 +1,10 @@
-package ir.ac.kntu;
+package ir.ac.kntu.rainbow;
 
+import ir.ac.kntu.cube.DownFace;
+import ir.ac.kntu.cube.UpFace;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import javafx.scene.shape.Rectangle;
-
-import java.awt.*;
 
 
 public class RecursiveGUI {
@@ -40,4 +39,5 @@ public class RecursiveGUI {
     public int getNumber(){
         return number;
     }
+
 }
