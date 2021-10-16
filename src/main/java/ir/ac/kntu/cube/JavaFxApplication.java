@@ -25,13 +25,13 @@ public class JavaFxApplication extends Application {
         RecursiveGUI recursiveGUI = new RecursiveGUI();
         //root.setStyle("-fx-border-width: 0 0 5 0; -fx-border-style: dotted;");
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.println("Enter scene dimensions (height and width should be so close)");
-            System.out.println("Enter the height");
+            System.out.println("Enter scene dimensions (height and width should be so close) : ");
+            System.out.println("Enter the height : ");
             height = scanner.nextDouble();
-            System.out.println("Enter the width");
+            System.out.println("Enter the width : ");
             width = scanner.nextDouble();
             //try to separate logic from GUI
-            System.out.println("Enter a number between 1 and 11");
+            System.out.println("Enter a number between 1 and 11 : ");
             recursiveGUI.setNumber(scanner.nextInt());
             recursiveGUI.setHeight(height);
         }
