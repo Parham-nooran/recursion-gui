@@ -36,7 +36,7 @@ public class JavaFxApplication extends Application {
             recursiveGUI.setHeight(height);
         }
         recursiveGUI.drawUpFace(root, height/2,width/2, height/2);
-        scene = new Scene(root, height + 10, width + 10);
+        scene = new Scene(root, width + 10, height + 10);
         stage.initStyle(StageStyle.UTILITY);
         stage.setTitle("Recursion in JavaFX!");
         stage.setScene(scene);
